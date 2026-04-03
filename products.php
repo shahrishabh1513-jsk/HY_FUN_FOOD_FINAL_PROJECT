@@ -1,0 +1,711 @@
+<?php
+$pageTitle = "Products | HyFun Foods - Premium Potato Snacks";
+$additionalCss = "products.css";
+$additionalJs = "products.js";
+
+ob_start();
+?>
+
+<section class="products-hero section-bg">
+    <div class="bg-pattern"></div>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>PREMIUM POTATO SNACKS COLLECTION</h1>
+            <p>Discover our extensive range of delicious, high-quality frozen snacks made from the finest potatoes. From classic favorites to innovative creations, we bring taste and convenience to every meal.</p>
+            <div class="hero-stats">
+                <div class="hero-stat"><h3>50+</h3><p>Products</p></div>
+                <div class="hero-stat"><h3>8</h3><p>Categories</p></div>
+                <div class="hero-stat"><h3>100%</h3><p>Vegetarian</p></div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="products-hero-container">
+                <img src="./assets/image/peck2.webp" alt="HyFun Products Collection" class="products-hero-img">
+                <div class="floating-product product-2"><i class="fas fa-cheese"></i></div>
+                <div class="floating-product product-3"><i class="fas fa-pizza-slice"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- French Fries Products -->
+<section class="product-category" id="french-fries">
+    <div class="container">
+        <div class="section-title"><h2>French Fries Collection</h2><p>Crispy, golden, and perfectly seasoned - our French fries are made from premium potatoes for that authentic taste and texture</p><div class="title-accent"></div></div>
+        <div class="products-grid">
+            <div class="product-card" data-category="french-fries"><div class="product-image"><img src="./assets/image/french_fries.png" alt="French Fries" class="product-img"><div class="product-badge">Best Seller</div></div><div class="product-info"><h3>French Fries</h3><p class="product-desc">Classic straight-cut fries with perfect crispiness</p><div class="product-tags"><span class="tag">Ready in 3 Min</span><span class="tag">No Preservatives</span></div></div></div>
+            <div class="product-card" data-category="french-fries"><div class="product-image"><img src="./assets/image/XLF Fries.png" alt="XLF Fries" class="product-img"><div class="product-badge">Extra Long</div></div><div class="product-info"><h3>XLF Fries</h3><p class="product-desc">Extra long fries for that premium restaurant feel</p><div class="product-tags"><span class="tag">Extra Length</span><span class="tag">Premium Cut</span></div></div></div>
+            <div class="product-card" data-category="french-fries"><div class="product-image"><img src="./assets/image/Crinkle fries.png" alt="Crinkle Fries" class="product-img"><div class="product-badge">Crinkle Cut</div></div><div class="product-info"><h3>Crinkle Fries</h3><p class="product-desc">Fun crinkle-cut shape holds more seasoning</p><div class="product-tags"><span class="tag">Crinkle Cut</span><span class="tag">Extra Crispy</span></div></div></div>
+            <div class="product-card" data-category="french-fries"><div class="product-image"><img src="./assets/image/Skin on Fries.png" alt="Skin on Fries" class="product-img"><div class="product-badge">Natural</div></div><div class="product-info"><h3>Skin on Fries</h3><p class="product-desc">Fries with skin for extra nutrients and rustic taste</p><div class="product-tags"><span class="tag">Skin On</span><span class="tag">Natural</span></div></div></div>
+            <div class="product-card" data-category="french-fries"><div class="product-image"><img src="./assets/image/Flavory Fries.png" alt="Flavory Fries" class="product-img"><div class="product-badge">Seasoned</div></div><div class="product-info"><h3>Flavory Fries</h3><p class="product-desc">Pre-seasoned fries with delicious flavors</p><div class="product-tags"><span class="tag">Seasoned</span><span class="tag">Ready to Cook</span></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Potato Specialties -->
+<section class="product-category section-bg" id="potato-specialties">
+    <div class="bg-pattern bg-pattern-2"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Potato Specialties</h2>
+            <p>Innovative potato creations that go beyond traditional fries</p>
+            <div class="title-accent"></div>
+        </div>
+        <div class="products-grid">
+            <!-- Potato Wedges -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Potato Wedges.png" alt="Potato Wedges" class="product-img">
+                    <div class="product-badge">Classic</div>
+                </div>
+                <div class="product-info">
+                    <h3>Potato Wedges</h3>
+                    <p class="product-desc">Thick-cut wedges with skin, perfect for dipping</p>
+                    <div class="product-tags">
+                        <span class="tag">Wedges</span>
+                        <span class="tag">Skin On</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Classic Wedges -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Classic Wedges.png" alt="Classic Wedges" class="product-img">
+                    <div class="product-badge">Classic</div>
+                </div>
+                <div class="product-info">
+                    <h3>Classic Wedges</h3>
+                    <p class="product-desc">Traditional potato wedges with perfect seasoning</p>
+                    <div class="product-tags">
+                        <span class="tag">Wedges</span>
+                        <span class="tag">Classic</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Lime 'n' Mint Wedges -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Lime ‘n’ Mint Wedges.png" alt="Lime 'n' Mint Wedges" class="product-img">
+                    <div class="product-badge">Zesty</div>
+                </div>
+                <div class="product-info">
+                    <h3>Lime 'n' Mint Wedges</h3>
+                    <p class="product-desc">Refreshing wedges with lime and mint flavor</p>
+                    <div class="product-tags">
+                        <span class="tag">Wedges</span>
+                        <span class="tag">Refreshing</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Spicy Wedges -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Spicy Wedges.png" alt="Spicy Wedges" class="product-img">
+                    <div class="product-badge">Spicy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Spicy Wedges</h3>
+                    <p class="product-desc">Wedges with a bold spicy kick</p>
+                    <div class="product-tags">
+                        <span class="tag">Wedges</span>
+                        <span class="tag">Spicy</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hash Brown Round -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Hash Brown Round.png" alt="Hash Brown Round" class="product-img">
+                    <div class="product-badge">Breakfast</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hash Brown Round</h3>
+                    <p class="product-desc">Round-shaped crispy hash browns</p>
+                    <div class="product-tags">
+                        <span class="tag">Hash Brown</span>
+                        <span class="tag">Crispy</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hash Brown Mini Triangle -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Hash Brown Mini Triangle.png" alt="Hash Brown Mini Triangle" class="product-img">
+                    <div class="product-badge">Bite-sized</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hash Brown Mini Triangle</h3>
+                    <p class="product-desc">Small triangle hash brown pieces</p>
+                    <div class="product-tags">
+                        <span class="tag">Hash Brown</span>
+                        <span class="tag">Mini</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hash Brown Triangle -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Hash Brown Triangle.png" alt="Hash Brown Triangle" class="product-img">
+                    <div class="product-badge">Classic</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hash Brown Triangle</h3>
+                    <p class="product-desc">Classic triangle-shaped hash browns</p>
+                    <div class="product-tags">
+                        <span class="tag">Hash Brown</span>
+                        <span class="tag">Triangle</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hash Brown Patties -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Hash Brown Patties.png" alt="Hash Brown Patties" class="product-img">
+                    <div class="product-badge">Breakfast</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hash Brown Patties</h3>
+                    <p class="product-desc">Crispy shredded potato patties</p>
+                    <div class="product-tags">
+                        <span class="tag">Breakfast</span>
+                        <span class="tag">Crispy</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hash Brown Gems -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Hash Brown Gems.png" alt="Hash Brown Gems" class="product-img">
+                    <div class="product-badge">Bite-sized</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hash Brown Gems</h3>
+                    <p class="product-desc">Small gem-shaped hash brown bites</p>
+                    <div class="product-tags">
+                        <span class="tag">Hash Brown</span>
+                        <span class="tag">Gems</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Tater Shotz -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Tater Shotz.png" alt="Tater Shotz" class="product-img">
+                    <div class="product-badge">Bite-sized</div>
+                </div>
+                <div class="product-info">
+                    <h3>Tater Shotz</h3>
+                    <p class="product-desc">Bite-sized potato nuggets</p>
+                    <div class="product-tags">
+                        <span class="tag">Bite-sized</span>
+                        <span class="tag">Party Snack</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Spicy Hash Brown -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Spicy Hash Brown.png" alt="Spicy Hash Brown" class="product-img">
+                    <div class="product-badge">Spicy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Spicy Hash Brown</h3>
+                    <p class="product-desc">Hash browns with a spicy kick</p>
+                    <div class="product-tags">
+                        <span class="tag">Spicy</span>
+                        <span class="tag">Hot</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hash Brown Oval -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Hash Brown Oval.png" alt="Hash Brown Oval" class="product-img">
+                    <div class="product-badge">Unique</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hash Brown Oval</h3>
+                    <p class="product-desc">Oval-shaped hash brown patties</p>
+                    <div class="product-tags">
+                        <span class="tag">Hash Brown</span>
+                        <span class="tag">Oval</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Classic Patty with Herbs & Chilli -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Classic Patty with Herbs & Chilli.png" alt="Classic Patty with Herbs & Chilli" class="product-img">
+                    <div class="product-badge">Flavored</div>
+                </div>
+                <div class="product-info">
+                    <h3>Classic Patty with Herbs & Chilli</h3>
+                    <p class="product-desc">Herb and chili infused potato patties</p>
+                    <div class="product-tags">
+                        <span class="tag">Herbs</span>
+                        <span class="tag">Chilli</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Potatobets -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/PotatoBets-1.png" alt="Potatobets" class="product-img">
+                    <div class="product-badge">New</div>
+                </div>
+                <div class="product-info">
+                    <h3>Potatobets</h3>
+                    <p class="product-desc">Crunchy potato bets with seasoning</p>
+                    <div class="product-tags">
+                        <span class="tag">Crunchy</span>
+                        <span class="tag">Seasoned</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Chilli Garlic Poppers -->
+            <div class="product-card" data-category="potato-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Chilli Garlic Poppers.png" alt="Chilli Garlic Poppers" class="product-img">
+                    <div class="product-badge">Spicy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Chilli Garlic Poppers</h3>
+                    <p class="product-desc">Spicy garlic flavored potato poppers</p>
+                    <div class="product-tags">
+                        <span class="tag">Chilli</span>
+                        <span class="tag">Garlic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Veggie Specialties -->
+<section class="product-category" id="veggie-specialties">
+    <div class="container">
+        <div class="section-title">
+            <h2>Veggie Specialties</h2>
+            <p>Delicious vegetarian creations combining potatoes with other wholesome ingredients</p>
+            <div class="title-accent"></div>
+        </div>
+        <div class="products-grid">
+            <!-- Jalapeño Cheesy Pops -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Jalapeño Cheesy Pops.png" alt="Jalapeño Cheesy Pops" class="product-img">
+                    <div class="product-badge">Spicy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Jalapeño Cheesy Pops</h3>
+                    <p class="product-desc">Spicy jalapeño and cheese bites</p>
+                    <div class="product-tags">
+                        <span class="tag">Spicy</span>
+                        <span class="tag">Cheese</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Veggie Stix -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Veggie Stix.png" alt="Veggie Stix" class="product-img">
+                    <div class="product-badge">Crunchy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Veggie Stix</h3>
+                    <p class="product-desc">Crispy vegetable sticks</p>
+                    <div class="product-tags">
+                        <span class="tag">Crunchy</span>
+                        <span class="tag">Sticks</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Crispy Veggie Bites -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Crispy Veggie Bites.png" alt="Crispy Veggie Bites" class="product-img">
+                    <div class="product-badge">Bite-sized</div>
+                </div>
+                <div class="product-info">
+                    <h3>Crispy Veggie Bites</h3>
+                    <p class="product-desc">Small crispy vegetable bites</p>
+                    <div class="product-tags">
+                        <span class="tag">Crispy</span>
+                        <span class="tag">Bite-sized</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Cheesy Paneer Patty -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Cheesy Paneer Patty.png" alt="Cheesy Paneer Patty" class="product-img">
+                    <div class="product-badge">Cheese</div>
+                </div>
+                <div class="product-info">
+                    <h3>Cheesy Paneer Patty</h3>
+                    <p class="product-desc">Paneer and cheese filled patty</p>
+                    <div class="product-tags">
+                        <span class="tag">Cheese</span>
+                        <span class="tag">Paneer</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Kings Patty -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Kings Patty.png" alt="Kings Patty" class="product-img">
+                    <div class="product-badge">Premium</div>
+                </div>
+                <div class="product-info">
+                    <h3>Kings Patty</h3>
+                    <p class="product-desc">Premium vegetable patty</p>
+                    <div class="product-tags">
+                        <span class="tag">Premium</span>
+                        <span class="tag">Special</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Veg Burger Patty -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Veg Burger Patty.png" alt="Veg Burger Patty" class="product-img">
+                    <div class="product-badge">Burger</div>
+                </div>
+                <div class="product-info">
+                    <h3>Veg Burger Patty</h3>
+                    <p class="product-desc">Perfect patty for vegetarian burgers</p>
+                    <div class="product-tags">
+                        <span class="tag">Burger</span>
+                        <span class="tag">Protein Rich</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Spicy Paneer Patty -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Spicy-Paneer-Patty.png" alt="Spicy Paneer Patty" class="product-img">
+                    <div class="product-badge">Spicy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Spicy Paneer Patty</h3>
+                    <p class="product-desc">Spicy paneer-filled patty</p>
+                    <div class="product-tags">
+                        <span class="tag">Spicy</span>
+                        <span class="tag">Paneer</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Mozzarella Cheese Stix -->
+            <div class="product-card" data-category="veggie-specialties">
+                <div class="product-image">
+                    <img src="./assets/image/Mozarella-Cheese-Stix.png" alt="Mozzarella Cheese Stix" class="product-img">
+                    <div class="product-badge">Cheesy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Mozzarella Cheese Stix</h3>
+                    <p class="product-desc">Breaded mozzarella cheese sticks</p>
+                    <div class="product-tags">
+                        <span class="tag">Mozzarella</span>
+                        <span class="tag">Sticks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Indian Ethnic -->
+<section class="product-category section-bg" id="indian-ethnic">
+    <div class="bg-pattern bg-pattern-3"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Indian Ethnic Snacks</h2>
+            <p>Traditional Indian snacks made with authentic flavors and recipes</p>
+            <div class="title-accent"></div>
+        </div>
+        <div class="products-grid">
+            <!-- Aloo Tikki -->
+            <div class="product-card" data-category="indian-ethnic">
+                <div class="product-image">
+                    <img src="./assets/image/Aloo_Tikki.png" alt="Aloo Tikki" class="product-img">
+                    <div class="product-badge">Traditional</div>
+                </div>
+                <div class="product-info">
+                    <h3>Aloo Tikki</h3>
+                    <p class="product-desc">Classic Indian potato patties with spices</p>
+                    <div class="product-tags">
+                        <span class="tag">Traditional</span>
+                        <span class="tag">Spiced</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Sabudana Patty -->
+            <div class="product-card" data-category="indian-ethnic">
+                <div class="product-image">
+                    <img src="./assets/image/Sabudana-Patty.png" alt="Sabudana Patty" class="product-img">
+                    <div class="product-badge">Festive</div>
+                </div>
+                <div class="product-info">
+                    <h3>Sabudana Patty</h3>
+                    <p class="product-desc">Sago and potato patties for fasting</p>
+                    <div class="product-tags">
+                        <span class="tag">Sabudana</span>
+                        <span class="tag">Fasting</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Mumbai Aloo Vada -->
+            <div class="product-card" data-category="indian-ethnic">
+                <div class="product-image">
+                    <img src="./assets/image/Mumbai Aloo Vada.png" alt="Mumbai Aloo Vada" class="product-img">
+                    <div class="product-badge">Street Food</div>
+                </div>
+                <div class="product-info">
+                    <h3>Mumbai Aloo Vada</h3>
+                    <p class="product-desc">Mumbai-style potato vada</p>
+                    <div class="product-tags">
+                        <span class="tag">Street Food</span>
+                        <span class="tag">Spicy</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hara Bhara Kebab -->
+            <div class="product-card" data-category="indian-ethnic">
+                <div class="product-image">
+                    <img src="./assets/image/Hara-Bhara-Kebab.png" alt="Hara Bhara Kebab" class="product-img">
+                    <div class="product-badge">Green</div>
+                </div>
+                <div class="product-info">
+                    <h3>Hara Bhara Kebab</h3>
+                    <p class="product-desc">Spinach and potato kebabs</p>
+                    <div class="product-tags">
+                        <span class="tag">Spinach</span>
+                        <span class="tag">Healthy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Baked Snacks -->
+<section class="product-category" id="baked-snacks">
+    <div class="container">
+        <div class="section-title">
+            <h2>Baked Snacks</h2>
+            <p>Healthier baked options without compromising on taste</p>
+            <div class="title-accent"></div>
+        </div>
+        <div class="products-grid">
+            <!-- Margherita Pizza -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Margherita Pizza.png" alt="Margherita Pizza" class="product-img">
+                    <div class="product-badge">Pizza</div>
+                </div>
+                <div class="product-info">
+                    <h3>Margherita Pizza</h3>
+                    <p class="product-desc">Classic margherita pizza pockets</p>
+                    <div class="product-tags">
+                        <span class="tag">Pizza</span>
+                        <span class="tag">Baked</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Veg Paradise Pizza -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Veg Paradise Pizza.png" alt="Veg Paradise Pizza" class="product-img">
+                    <div class="product-badge">Pizza</div>
+                </div>
+                <div class="product-info">
+                    <h3>Veg Paradise Pizza</h3>
+                    <p class="product-desc">Mixed vegetable pizza pockets</p>
+                    <div class="product-tags">
+                        <span class="tag">Pizza</span>
+                        <span class="tag">Veggie</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Tandoori Paneer Pizza -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Tandoori Paneer Pizza.png" alt="Tandoori Paneer Pizza" class="product-img">
+                    <div class="product-badge">Pizza</div>
+                </div>
+                <div class="product-info">
+                    <h3>Tandoori Paneer Pizza</h3>
+                    <p class="product-desc">Tandoori spiced paneer pizza</p>
+                    <div class="product-tags">
+                        <span class="tag">Pizza</span>
+                        <span class="tag">Paneer</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Garden Fresh Pizza -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Garden Fresh Pizza.png" alt="Garden Fresh Pizza" class="product-img">
+                    <div class="product-badge">Pizza</div>
+                </div>
+                <div class="product-info">
+                    <h3>Garden Fresh Pizza</h3>
+                    <p class="product-desc">Fresh vegetable garden pizza</p>
+                    <div class="product-tags">
+                        <span class="tag">Pizza</span>
+                        <span class="tag">Fresh</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Cheese Onion Capsicum Pizza -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Cheese-Onion-Capsicum-Pizza.png" alt="Cheese Onion Capsicum Pizza" class="product-img">
+                    <div class="product-badge">Pizza</div>
+                </div>
+                <div class="product-info">
+                    <h3>Cheese Onion Capsicum Pizza</h3>
+                    <p class="product-desc">Cheesy onion and capsicum pizza</p>
+                    <div class="product-tags">
+                        <span class="tag">Pizza</span>
+                        <span class="tag">Cheesy</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Mexicano PUFFETS -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Mexicano Puffets.png" alt="Mexicano Puffets" class="product-img">
+                    <div class="product-badge">Mexican</div>
+                </div>
+                <div class="product-info">
+                    <h3>Mexicano Puffets</h3>
+                    <p class="product-desc">Mexican style seasoned puffs</p>
+                    <div class="product-tags">
+                        <span class="tag">Mexican</span>
+                        <span class="tag">Seasoned</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Italiano PUFFETS -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Italiano Puffets.png" alt="Italiano Puffets" class="product-img">
+                    <div class="product-badge">Italian</div>
+                </div>
+                <div class="product-info">
+                    <h3>Italiano Puffets</h3>
+                    <p class="product-desc">Italian herb and cheese puffs</p>
+                    <div class="product-tags">
+                        <span class="tag">Italian</span>
+                        <span class="tag">Herbs</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Schezwan PUFFETS -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Schezwan Puffets.png" alt="Schezwan Puffets" class="product-img">
+                    <div class="product-badge">Spicy</div>
+                </div>
+                <div class="product-info">
+                    <h3>Schezwan Puffets</h3>
+                    <p class="product-desc">Spicy Schezwan sauce filled puffs</p>
+                    <div class="product-tags">
+                        <span class="tag">Schezwan</span>
+                        <span class="tag">Spicy</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Apple Crumble Pie PUFFETS -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Apple Crumble Pie Puffets.png" alt="Apple Crumble Pie Puffets" class="product-img">
+                    <div class="product-badge">Dessert</div>
+                </div>
+                <div class="product-info">
+                    <h3>Apple Crumble Pie Puffets</h3>
+                    <p class="product-desc">Apple crumble in puff pastry</p>
+                    <div class="product-tags">
+                        <span class="tag">Apple</span>
+                        <span class="tag">Crumble</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Apple Pie -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Apple Pie.png" alt="Apple Pie" class="product-img">
+                    <div class="product-badge">Dessert</div>
+                </div>
+                <div class="product-info">
+                    <h3>Apple Pie</h3>
+                    <p class="product-desc">Sweet apple filled pastry</p>
+                    <div class="product-tags">
+                        <span class="tag">Dessert</span>
+                        <span class="tag">Sweet</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Mango – Peach Pie -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Mango – Peach Pie.png" alt="Mango Peach Pie" class="product-img">
+                    <div class="product-badge">Dessert</div>
+                </div>
+                <div class="product-info">
+                    <h3>Mango – Peach Pie</h3>
+                    <p class="product-desc">Tropical mango and peach pie</p>
+                    <div class="product-tags">
+                        <span class="tag">Mango</span>
+                        <span class="tag">Peach</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Pineapple Pie -->
+            <div class="product-card" data-category="baked-snacks">
+                <div class="product-image">
+                    <img src="./assets/image/Pineapple Pie.png" alt="Pineapple Pie" class="product-img">
+                    <div class="product-badge">Dessert</div>
+                </div>
+                <div class="product-info">
+                    <h3>Pineapple Pie</h3>
+                    <p class="product-desc">Sweet pineapple filled pastry</p>
+                    <div class="product-tags">
+                        <span class="tag">Pineapple</span>
+                        <span class="tag">Tropical</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products-features section-bg">
+    <div class="bg-pattern"></div>
+    <div class="container">
+        <div class="section-title"><h2>Why Choose HyFun Products?</h2><p>Quality and taste you can trust in every bite</p><div class="title-accent"></div></div>
+        <div class="features-grid">
+            <div class="feature-card"><div class="feature-icon"><i class="fas fa-seedling"></i></div><h3>Premium Quality Potatoes</h3><p>Made from carefully selected premium potatoes grown in ideal conditions</p></div>
+            <div class="feature-card"><div class="feature-icon"><i class="fas fa-clock"></i></div><h3>Ready in Minutes</h3><p>Most products ready in just 3-5 minutes - perfect for busy lifestyles</p></div>
+            <div class="feature-card"><div class="feature-icon"><i class="fas fa-leaf"></i></div><h3>100% Vegetarian</h3><p>All products made from 100% vegetarian ingredients with no animal products</p></div>
+            <div class="feature-card"><div class="feature-icon"><i class="fas fa-prescription-bottle"></i></div><h3>No Preservatives</h3><p>Natural ingredients with no added preservatives or artificial colors</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="catalog-section">
+    <div class="container">
+        <div class="catalog-content">
+            <div class="catalog-text"><h2>Download Our Product Catalog</h2><p>Get complete details about all our products, specifications, and packaging options</p><a href="./assets/hyfun_Brochure.pdf" class="btn btn-catalog"><i class="fas fa-download"></i>Download Catalog (PDF)</a></div>
+            <div class="catalog-image"><img src="./assets/image/hyfun_logo.png" alt="Product Catalog"></div>
+        </div>
+    </div>
+</section>
+
+<?php
+$content = ob_get_clean();
+include 'includes/header.php';
+echo $content;
+include 'includes/footer.php';
+?>
