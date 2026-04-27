@@ -1,10 +1,12 @@
 # 🍔 HY FUN FOOD — Final Project
 
 <p align="center">
-  <img src="https://img.shields.io/badge/🍽️ Food-WebApp-ff7043?style=for-the-badge">
-  <img src="https://img.shields.io/badge/⚙️ PHP-Backend-777bb4?style=for-the-badge">
-  <img src="https://img.shields.io/badge/💻 FullStack-Project-ff69b4?style=for-the-badge">
-  <img src="https://img.shields.io/badge/📱 Responsive-Design-00c853?style=for-the-badge">
+  <img src="https://cdn-icons-png.flaticon.com/512/2674/2674067.png" width="60" title="Food Web App"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/4651/4651706.png" width="60" title="Frontend"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/11676/11676379.png" width="60" title="Backend"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png" width="60" title="Responsive Design"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/5956/5956494.png" width="60" title="Project"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png" width="60" title="Food"/>
 </p>
 
 <p align="center">
