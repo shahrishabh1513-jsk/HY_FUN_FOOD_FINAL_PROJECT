@@ -1,5 +1,3 @@
-Here is the complete PHP code for your Seed to Shelf page with all the sections you provided.
-```php
 <?php
 $pageTitle = "Seed to Shelf | HyFun Foods";
 $additionalCss = "seedtoshelf.css";
@@ -9,7 +7,7 @@ ob_start();
 ?>
 
 <!-- Hero Section -->
-<section class="seed-hero">
+<section class="seed-hero" style="padding: 120px 0 80px; margin-top: 0;">
     <div class="seed-hero-background">
         <div class="floating-seeds">
             <div class="seed" style="--delay: 0s"></div>
@@ -493,4 +491,3 @@ include 'includes/header.php';
 echo $content;
 include 'includes/footer.php';
 ?>
-```

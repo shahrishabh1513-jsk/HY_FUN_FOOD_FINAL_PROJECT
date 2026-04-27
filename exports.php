@@ -6,7 +6,7 @@ $additionalJs = "exports.js";
 ob_start();
 ?>
 
-    <section class="exports-hero-new section-bg">
+    <section class="exports-hero-new section-bg" style="padding: 120px 0 80px; margin-top: 0;">
         <div class="bg-pattern bg-pattern-world"></div>
         <div class="container">
             <div class="exports-hero-content">

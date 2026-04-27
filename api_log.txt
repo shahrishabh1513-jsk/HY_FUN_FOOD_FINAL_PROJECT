@@ -67,3 +67,145 @@ Save order result: Array
     [orderId] => 1
 )
 
+2026-04-08 18:18:34 - Order API received: Array
+(
+    [action] => save_order
+    [orderData] => Array
+        (
+            [fullName] => RISHABH SHAH
+            [phoneNumber] => 7861976128
+            [email] => 23ss02it181@ppsu.ac.in
+            [address] => PPSU
+            [landmark] => 
+            [city] => Mehsana
+            [pincode] => 384002
+            [deliveryTime] => asap
+            [paymentMethod] => cod
+        )
+
+    [cartItems] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => XLF Fries
+                    [price] => 249.00
+                    [image] => XLF Fries.png
+                    [quantity] => 1
+                    [weight] => 500g
+                )
+
+            [1] => Array
+                (
+                    [id] => 3
+                    [name] => Crinkle Cut Fries
+                    [price] => 179.00
+                    [image] => Crinkle fries.png
+                    [quantity] => 1
+                    [weight] => 500g
+                )
+
+            [2] => Array
+                (
+                    [id] => 5
+                    [name] => Potato Wedges
+                    [price] => 229.00
+                    [image] => Potato Wedges.png
+                    [quantity] => 1
+                    [weight] => 500g
+                )
+
+        )
+
+)
+
+Save order result: Array
+(
+    [success] => 1
+    [orderNumber] => HYFUN-69D67FDAC591D-1131
+    [orderId] => 2
+)
+
+2026-04-15 06:16:36 - Order API received: Array
+(
+    [action] => save_order
+    [orderData] => Array
+        (
+            [fullName] => Krish
+            [phoneNumber] => 9099869388
+            [email] => 23ss02it117@ppsu.ac.in
+            [address] => Hirabag
+            [landmark] => 
+            [city] => Surat 
+            [pincode] => 395006
+            [deliveryTime] => asap
+            [paymentMethod] => cod
+        )
+
+    [cartItems] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Classic French Fries
+                    [price] => 199.00
+                    [image] => french_fries.png
+                    [quantity] => 1
+                    [weight] => 500g
+                )
+
+            [1] => Array
+                (
+                    [id] => 9
+                    [name] => Hash Brown Round
+                    [price] => 189.00
+                    [image] => Hash Brown Round.png
+                    [quantity] => 1
+                    [weight] => 300g
+                )
+
+            [2] => Array
+                (
+                    [id] => 8
+                    [name] => Margherita Pizza
+                    [price] => 249.00
+                    [image] => Margherita Pizza.png
+                    [quantity] => 1
+                    [weight] => 400g
+                )
+
+        )
+
+)
+
+Save order result: Array
+(
+    [success] => 1
+    [orderNumber] => HYFUN-69DF11253851C-4615
+    [orderId] => 3
+)
+
+2026-04-15 06:17:45 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-15 06:17:47 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-15 06:17:47 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-15 06:17:47 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+

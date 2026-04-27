@@ -6,7 +6,7 @@ $additionalJs = "products.js";
 ob_start();
 ?>
 
-<section class="products-hero section-bg">
+<section class="products-hero section-bg" style="padding: 120px 0 80px; margin-top: 0;">
     <div class="bg-pattern"></div>
     <div class="container hero-content">
         <div class="hero-text">

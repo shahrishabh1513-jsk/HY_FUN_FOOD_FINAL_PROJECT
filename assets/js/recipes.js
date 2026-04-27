@@ -223,12 +223,14 @@ function initRecipeCards() {
     }
 }
 
-/* Initialize video players */
+/* Initialize video players - FIXED */
 function initVideoPlayers() {
     // Play buttons for featured slider
     const playButtons = document.querySelectorAll('.play-btn');
     playButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             const videoUrl = this.getAttribute('data-video');
             showVideoModal(videoUrl);
         });
@@ -238,6 +240,7 @@ function initVideoPlayers() {
     const smallPlayButtons = document.querySelectorAll('.play-btn-small');
     smallPlayButtons.forEach(button => {
         button.addEventListener('click', function(e) {
+            e.preventDefault();
             e.stopPropagation(); // Prevent triggering card click
             const videoUrl = this.getAttribute('data-video');
             showVideoModal(videoUrl);
@@ -247,7 +250,9 @@ function initVideoPlayers() {
     // Video play buttons in video section
     const videoPlayButtons = document.querySelectorAll('.video-play-btn');
     videoPlayButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             const videoUrl = this.getAttribute('data-video');
             showVideoModal(videoUrl);
         });
@@ -363,11 +368,10 @@ function initRecipeModal() {
     });
 }
 
-/* Initialize video modal */
+/* Initialize video modal - FIXED for YouTube playback */
 function initVideoModal() {
     const modal = document.getElementById('videoModal');
     const closeBtn = document.getElementById('closeVideoModal');
-    let player = null;
     
     if (!modal || !closeBtn) return;
     
@@ -389,23 +393,99 @@ function initVideoModal() {
             closeVideoModal();
         }
     });
+}
+
+/* Show video modal - FIXED */
+let currentPlayer = null;
+
+function showVideoModal(videoUrl) {
+    const modal = document.getElementById('videoModal');
+    const videoContainer = document.getElementById('videoPlayer');
     
-    // Function to close video modal and destroy player
-    function closeVideoModal() {
+    if (!modal || !videoContainer) return;
+    
+    // Clear any existing content and player
+    if (currentPlayer) {
+        try {
+            currentPlayer.destroy();
+        } catch(e) {
+            console.log('Player destroy error:', e);
+        }
+        currentPlayer = null;
+    }
+    
+    videoContainer.innerHTML = '';
+    
+    // Convert YouTube watch URL to embed URL if needed
+    let embedUrl = videoUrl;
+    
+    // Handle youtu.be format
+    if (videoUrl.includes('youtu.be/')) {
+        const videoId = videoUrl.split('youtu.be/')[1].split('?')[0];
+        embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&playsinline=1&modestbranding=1`;
+    }
+    // Handle youtube.com/watch?v= format
+    else if (videoUrl.includes('youtube.com/watch')) {
+        const urlParams = new URLSearchParams(videoUrl.split('?')[1]);
+        const videoId = urlParams.get('v');
+        embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0&playsinline=1&modestbranding=1`;
+    }
+    // Handle direct embed URL
+    else if (videoUrl.includes('youtube.com/embed/')) {
+        const separator = videoUrl.includes('?') ? '&' : '?';
+        embedUrl = `${videoUrl}${separator}autoplay=1&enablejsapi=1&rel=0&playsinline=1&modestbranding=1`;
+    }
+    
+    // Create iframe
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl;
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.border = 'none';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    
+    videoContainer.appendChild(iframe);
+    
+    // Show modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+/* Show video modal from YouTube URL - Legacy support */
+function showVideoModalFromUrl(videoUrl) {
+    showVideoModal(videoUrl);
+}
+
+/* Close video modal - FIXED */
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const videoContainer = document.getElementById('videoPlayer');
+    
+    if (modal) {
         modal.classList.remove('active');
-        document.body.style.overflow = 'auto';
-        
-        // Destroy Plyr player if it exists
-        if (player) {
-            player.destroy();
-            player = null;
+    }
+    
+    document.body.style.overflow = 'auto';
+    
+    // Clear video container completely
+    if (videoContainer) {
+        videoContainer.innerHTML = '';
+    }
+    
+    // Destroy player if exists
+    if (currentPlayer) {
+        try {
+            currentPlayer.destroy();
+        } catch(e) {
+            console.log('Player destroy error:', e);
         }
-        
-        // Clear video container
-        const videoContainer = document.getElementById('videoPlayer');
-        if (videoContainer) {
-            videoContainer.innerHTML = '';
-        }
+        currentPlayer = null;
     }
 }
 
@@ -723,36 +803,6 @@ function showRecipeModal(recipeId) {
     document.body.style.overflow = 'hidden';
 }
 
-/* Show video modal */
-function showVideoModal(videoUrl) {
-    const modal = document.getElementById('videoModal');
-    const videoContainer = document.getElementById('videoPlayer');
-    
-    if (!modal || !videoContainer) return;
-    
-    // Create video player
-    videoContainer.innerHTML = `
-        <div class="plyr__video-embed" id="player">
-            <iframe src="${videoUrl}?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" 
-                allowfullscreen allowtransparency allow="autoplay">
-            </iframe>
-        </div>
-    `;
-    
-    // Initialize Plyr player
-    const player = new Plyr('#player', {
-        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
-        youtube: { noCookie: true, rel: 0, showinfo: 0, iv_load_policy: 3 }
-    });
-    
-    // Show modal
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    
-    // Store player reference for cleanup
-    window.currentPlayer = player;
-}
-
 /* Close recipe modal */
 function closeRecipeModal() {
     const modal = document.getElementById('recipeModal');
@@ -777,7 +827,7 @@ function simulateLoadMoreRecipes() {
         // Create new recipe cards
         const newRecipes = [
             {
-                id: 7,
+                id: 34,
                 category: 'healthy',
                 title: 'Baked Potato Wedges',
                 desc: 'Healthy baked wedges with herbs',
@@ -786,7 +836,7 @@ function simulateLoadMoreRecipes() {
                 difficulty: 'Easy'
             },
             {
-                id: 8,
+                id: 35,
                 category: 'party',
                 title: 'Potato Sliders',
                 desc: 'Mini sliders with potato patties',
@@ -851,7 +901,8 @@ function simulateLoadMoreRecipes() {
             if (playBtn) {
                 playBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
-                    showVideoModal(this.getAttribute('data-video'));
+                    const videoUrl = this.getAttribute('data-video');
+                    showVideoModal(videoUrl);
                 });
             }
             

@@ -7,7 +7,7 @@ ob_start();
 ?>
 
 <!-- Recipes Hero Section -->
-<section class="recipes-hero section-bg">
+<section class="recipes-hero section-bg" style="padding: 120px 0 80px; margin-top: 0;">
     <div class="bg-pattern bg-pattern-recipes"></div>
     <div class="container">
         <div class="hero-content">

@@ -228,12 +228,13 @@ header {
    HOME PAGE SPECIFIC STYLES
    ============================================ */
 
-/* Hero Section */
+/* Hero Section - FIXED SPACING */
 .hero {
-    padding: 180px 0 100px;
+    padding: 120px 0 80px;
     position: relative;
     overflow: hidden;
-    margin-top: var(--header-height);
+    margin-top: 0;
+    min-height: auto;
 }
 
 .hero-content {
@@ -585,10 +586,11 @@ section {
    ABOUT PAGE SPECIFIC STYLES
    ============================================ */
 
-/* About Hero Section */
+/* About Hero Section - FIXED SPACING */
 #about-hero.hero {
-    padding: 150px 0 80px;
+    padding: 120px 0 80px;
     background: linear-gradient(135deg, rgba(120, 176, 75, 0.95), rgba(110, 193, 228, 0.95));
+    margin-top: 0;
 }
 
 #about-hero .hero-text h1 {

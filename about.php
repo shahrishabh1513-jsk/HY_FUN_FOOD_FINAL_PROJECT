@@ -8,7 +8,7 @@ ob_start();
 
 
 <!-- Example - Your about page content starts here -->
-<section class="hero section-bg" id="about-hero">
+<section class="hero section-bg" id="about-hero" style="padding: 120px 0 80px; margin-top: 0;">
     <div class="bg-pattern"></div>
     <div class="container hero-content">
         <div class="hero-text">

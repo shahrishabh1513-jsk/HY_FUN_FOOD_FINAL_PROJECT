@@ -7,7 +7,7 @@ ob_start();
 ?>
 
 <!-- Hero Section -->
-<section class="hero section-bg" id="home">
+<section class="hero section-bg" id="home" style="padding: 120px 0 80px; margin-top: 0;">
     <div class="bg-pattern"></div>
     <div class="container hero-content">
         <div class="hero-text">

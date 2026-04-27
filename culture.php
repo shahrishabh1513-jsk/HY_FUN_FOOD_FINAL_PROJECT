@@ -6,7 +6,7 @@ $additionalJs = "culture.js";
 ob_start();
 ?>
 
-<section class="culture-hero">
+<section class="culture-hero" style="padding: 120px 0 80px; margin-top: 0;">
     <div class="hero-background-pattern">
         <div class="pattern-circle" style="--delay: 0s;"></div>
         <div class="pattern-circle" style="--delay: 0.3s;"></div>
