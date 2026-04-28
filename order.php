@@ -26,6 +26,277 @@ $productsJson = json_encode($products);
         .product-card-modern:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
         .cart-badge { position: absolute; top: -5px; right: -5px; background: #ff4757; color: white; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; display: flex; align-items: center; justify-content: center; }
         .cart-btn { position: relative; }
+        .products-grid-modern {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .product-card-modern {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        .product-card-modern:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .product-image-wrapper {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+        .product-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .product-card-modern:hover .product-image-wrapper img {
+            transform: scale(1.08);
+        }
+        .product-badge-modern {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: linear-gradient(135deg, #78B04B, #6EC1E4);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            z-index: 2;
+        }
+        .product-info-modern {
+            padding: 16px;
+        }
+        .product-name {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #2D3748;
+        }
+        .product-desc-modern {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            height: 38px;
+            overflow: hidden;
+        }
+        .product-meta-modern {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .product-price-modern {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #78B04B;
+        }
+        .product-weight {
+            font-size: 0.75rem;
+            color: #999;
+            background: #f0f0f0;
+            padding: 3px 8px;
+            border-radius: 12px;
+        }
+        .product-actions-modern {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .quantity-control-modern {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #f5f5f5;
+            border-radius: 25px;
+            padding: 3px 8px;
+        }
+        .qty-btn {
+            width: 28px;
+            height: 28px;
+            border: none;
+            background: white;
+            border-radius: 50%;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .qty-btn:hover {
+            background: #78B04B;
+            color: white;
+        }
+        .qty-value {
+            font-weight: 600;
+            min-width: 28px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        .add-to-cart-btn {
+            flex: 1;
+            padding: 8px 12px;
+            background: linear-gradient(135deg, #78B04B, #6EC1E4);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        .add-to-cart-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(120,176,75,0.3);
+        }
+        .category-scroll {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 30px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .category-chip {
+            padding: 8px 20px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .category-chip:hover {
+            border-color: #78B04B;
+            transform: translateY(-2px);
+        }
+        .category-chip.active {
+            background: linear-gradient(135deg, #78B04B, #6EC1E4);
+            color: white;
+            border-color: transparent;
+        }
+        .products-header-modern {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .header-left h2 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        .header-left h2 span {
+            color: #78B04B;
+        }
+        .header-left p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .search-box-modern {
+            position: relative;
+            width: 260px;
+        }
+        .search-box-modern i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+        }
+        .search-box-modern input {
+            width: 100%;
+            padding: 10px 15px 10px 40px;
+            border: 2px solid #e0e0e0;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        .search-box-modern input:focus {
+            border-color: #78B04B;
+        }
+        .filter-dropdown {
+            position: relative;
+        }
+        .filter-btn {
+            padding: 10px 20px;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+        .filter-btn:hover {
+            border-color: #78B04B;
+        }
+        .filter-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 180px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            padding: 8px;
+            margin-top: 10px;
+            display: none;
+            z-index: 100;
+        }
+        .filter-menu.active {
+            display: block;
+        }
+        .filter-option {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+        }
+        .filter-option:hover {
+            background: #f0f0f0;
+            color: #78B04B;
+        }
+        @media (max-width: 768px) {
+            .products-header-modern {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-box-modern {
+                width: 100%;
+            }
+            .products-grid-modern {
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 15px;
+            }
+            .category-scroll {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+            }
+        }
     </style>
 </head>
 <body>
@@ -124,10 +395,34 @@ $productsJson = json_encode($products);
         <section id="section-products" class="content-section">
             <div class="products-modern">
                 <div class="products-header-modern">
-                    <div class="header-left"><h2>Our Delicious <span>Menu</span></h2><p>Choose from our wide variety of crispy snacks</p></div>
-                    <div class="header-right"><div class="search-box-modern"><i class="fas fa-search"></i><input type="text" id="searchProducts" placeholder="Search snacks..."></div><div class="filter-dropdown"><button class="filter-btn" id="filterBtn"><i class="fas fa-filter"></i>Filter</button><div class="filter-menu" id="filterMenu"><div class="filter-option" data-filter="all"><i class="fas fa-th-large"></i>All Items</div><div class="filter-option" data-filter="popular"><i class="fas fa-fire"></i>Popular</div><div class="filter-option" data-filter="veg"><i class="fas fa-leaf"></i>Veggie</div><div class="filter-option" data-filter="new"><i class="fas fa-star"></i>New Arrivals</div></div></div></div>
+                    <div class="header-left">
+                        <h2>Our Delicious <span>Menu</span></h2>
+                        <p>Choose from our wide variety of crispy snacks</p>
+                    </div>
+                    <div class="header-right">
+                        <div class="search-box-modern">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchProducts" placeholder="Search snacks...">
+                        </div>
+                        <div class="filter-dropdown">
+                            <button class="filter-btn" id="filterBtn"><i class="fas fa-filter"></i>Filter</button>
+                            <div class="filter-menu" id="filterMenu">
+                                <div class="filter-option" data-filter="all"><i class="fas fa-th-large"></i>All Items</div>
+                                <div class="filter-option" data-filter="popular"><i class="fas fa-fire"></i>Popular</div>
+                                <div class="filter-option" data-filter="veg"><i class="fas fa-leaf"></i>Veggie</div>
+                                <div class="filter-option" data-filter="new"><i class="fas fa-star"></i>New Arrivals</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="category-scroll"><button class="category-chip active" data-category="all"><i class="fas fa-utensils"></i>All</button><button class="category-chip" data-category="french-fries"><i class="fas fa-french-fries"></i>French Fries</button><button class="category-chip" data-category="potato-specialties"><i class="fas fa-potato"></i>Potato Specials</button><button class="category-chip" data-category="veggie-specialties"><i class="fas fa-carrot"></i>Veggie</button><button class="category-chip" data-category="indian-ethnic"><i class="fas fa-flag"></i>Indian</button><button class="category-chip" data-category="baked-snacks"><i class="fas fa-bread-slice"></i>Baked</button></div>
+                <div class="category-scroll">
+                    <button class="category-chip active" data-category="all"><i class="fas fa-utensils"></i> All</button>
+                    <button class="category-chip" data-category="french-fries"><i class="fas fa-french-fries"></i> French Fries</button>
+                    <button class="category-chip" data-category="potato-specialties"><i class="fas fa-potato"></i> Potato Specials</button>
+                    <button class="category-chip" data-category="veggie-specialties"><i class="fas fa-carrot"></i> Veggie Specials</button>
+                    <button class="category-chip" data-category="indian-ethnic"><i class="fas fa-flag"></i> Indian Ethnic</button>
+                    <button class="category-chip" data-category="baked-snacks"><i class="fas fa-bread-slice"></i> Baked Snacks</button>
+                </div>
                 <div class="products-grid-modern" id="productsGrid"></div>
             </div>
         </section>
@@ -238,20 +533,68 @@ $productsJson = json_encode($products);
     (function() {
         // Global variables
         let cart = JSON.parse(localStorage.getItem('hyfun_cart')) || [];
-        let products = [];
         let currentOrder = null;
         let userRating = 0;
+        let currentFilter = 'all';
+        let currentSearchTerm = '';
+        let currentCategory = 'all';
         
-        // Load products from PHP
-        const productsData = document.getElementById('productsData').value;
-        if (productsData) {
-            try {
-                products = JSON.parse(productsData);
-                console.log('Products loaded:', products.length);
-            } catch(e) {
-                console.error('Error parsing products:', e);
-            }
-        }
+        // Complete Products Database
+        const products = [
+            // French Fries Category (10 products)
+            { id: 1, name: "Classic French Fries", category: "french-fries", price: 199, image: "french_fries.png", desc: "Perfectly crispy golden fries", tag: "Best Seller", weight: "500g", popular: true },
+            { id: 2, name: "XLF Fries", category: "french-fries", price: 249, image: "XLF Fries.png", desc: "Extra long premium fries", tag: "Premium", weight: "500g", popular: true },
+            { id: 3, name: "Crinkle Cut Fries", category: "french-fries", price: 179, image: "Crinkle fries.png", desc: "Fun crinkle-cut style", tag: "Classic", weight: "500g" },
+            { id: 4, name: "Skin On Fries", category: "french-fries", price: 189, image: "Skin on Fries.png", desc: "Rustic fries with skin", tag: "Natural", weight: "500g" },
+            { id: 5, name: "Flavory Fries", category: "french-fries", price: 219, image: "Flavory Fries.png", desc: "Pre-seasoned delicious fries", tag: "Seasoned", weight: "500g" },
+            
+            // Potato Specialties (15 products)
+            { id: 6, name: "Potato Wedges", category: "potato-specialties", price: 229, image: "Potato Wedges.png", desc: "Thick-cut seasoned wedges", tag: "Classic", weight: "500g", popular: true },
+            { id: 7, name: "Classic Wedges", category: "potato-specialties", price: 209, image: "Classic Wedges.png", desc: "Traditional potato wedges", tag: "Classic", weight: "500g" },
+            { id: 8, name: "Lime 'n' Mint Wedges", category: "potato-specialties", price: 239, image: "Lime ‘n’ Mint Wedges.png", desc: "Zesty lime and mint flavor", tag: "Zesty", weight: "500g" },
+            { id: 9, name: "Spicy Wedges", category: "potato-specialties", price: 219, image: "Spicy Wedges.png", desc: "Bold spicy kick", tag: "Spicy", weight: "500g" },
+            { id: 10, name: "Hash Brown Round", category: "potato-specialties", price: 189, image: "Hash Brown Round.png", desc: "Round crispy hash browns", tag: "Breakfast", weight: "300g" },
+            { id: 11, name: "Hash Brown Mini Triangle", category: "potato-specialties", price: 179, image: "Hash Brown Mini Triangle.png", desc: "Small triangle hash brown pieces", tag: "Bite-sized", weight: "300g" },
+            { id: 12, name: "Hash Brown Triangle", category: "potato-specialties", price: 199, image: "Hash Brown Triangle.png", desc: "Classic triangle hash browns", tag: "Classic", weight: "300g" },
+            { id: 13, name: "Hash Brown Patties", category: "potato-specialties", price: 209, image: "Hash Brown Patties.png", desc: "Crispy shredded potato patties", tag: "Breakfast", weight: "300g" },
+            { id: 14, name: "Hash Brown Gems", category: "potato-specialties", price: 169, image: "Hash Brown Gems.png", desc: "Small gem-shaped hash brown bites", tag: "Bite-sized", weight: "300g" },
+            { id: 15, name: "Tater Shotz", category: "potato-specialties", price: 179, image: "Tater Shotz.png", desc: "Bite-sized potato nuggets", tag: "Bite-sized", weight: "400g" },
+            { id: 16, name: "Spicy Hash Brown", category: "potato-specialties", price: 199, image: "Spicy Hash Brown.png", desc: "Hash browns with a spicy kick", tag: "Spicy", weight: "300g" },
+            { id: 17, name: "Hash Brown Oval", category: "potato-specialties", price: 189, image: "Hash Brown Oval.png", desc: "Oval-shaped hash brown patties", tag: "Unique", weight: "300g" },
+            { id: 18, name: "Classic Patty with Herbs", category: "potato-specialties", price: 229, image: "Classic Patty with Herbs & Chilli.png", desc: "Herb and chili infused patties", tag: "Flavored", weight: "250g" },
+            { id: 19, name: "Potatobets", category: "potato-specialties", price: 159, image: "PotatoBets-1.png", desc: "Crunchy potato bites", tag: "New", weight: "400g" },
+            { id: 20, name: "Chilli Garlic Poppers", category: "potato-specialties", price: 199, image: "Chilli Garlic Poppers.png", desc: "Spicy garlic poppers", tag: "Spicy", weight: "350g" },
+            
+            // Veggie Specialties (8 products)
+            { id: 21, name: "Jalapeño Cheesy Pops", category: "veggie-specialties", price: 259, image: "Jalapeño Cheesy Pops.png", desc: "Spicy jalapeño cheese bites", tag: "Spicy", weight: "300g", popular: true },
+            { id: 22, name: "Veggie Stix", category: "veggie-specialties", price: 189, image: "Veggie Stix.png", desc: "Crispy vegetable sticks", tag: "Crunchy", weight: "400g" },
+            { id: 23, name: "Crispy Veggie Bites", category: "veggie-specialties", price: 179, image: "Crispy Veggie Bites.png", desc: "Small crispy vegetable bites", tag: "Bite-sized", weight: "350g" },
+            { id: 24, name: "Cheesy Paneer Patty", category: "veggie-specialties", price: 279, image: "Cheesy Paneer Patty.png", desc: "Paneer cheese filled patty", tag: "Cheese", weight: "250g" },
+            { id: 25, name: "Kings Patty", category: "veggie-specialties", price: 299, image: "Kings Patty.png", desc: "Premium vegetable patty", tag: "Premium", weight: "250g" },
+            { id: 26, name: "Veg Burger Patty", category: "veggie-specialties", price: 229, image: "Veg Burger Patty.png", desc: "Perfect veg burger patty", tag: "Burger", weight: "250g" },
+            { id: 27, name: "Spicy Paneer Patty", category: "veggie-specialties", price: 289, image: "Spicy-Paneer-Patty.png", desc: "Spicy paneer-filled patty", tag: "Spicy", weight: "250g" },
+            { id: 28, name: "Mozzarella Cheese Stix", category: "veggie-specialties", price: 299, image: "Mozarella-Cheese-Stix.png", desc: "Breaded mozzarella sticks", tag: "Cheesy", weight: "300g" },
+            
+            // Indian Ethnic (4 products)
+            { id: 29, name: "Aloo Tikki", category: "indian-ethnic", price: 179, image: "Aloo_Tikki.png", desc: "Classic Indian potato patties", tag: "Traditional", weight: "400g", popular: true },
+            { id: 30, name: "Sabudana Patty", category: "indian-ethnic", price: 199, image: "Sabudana-Patty.png", desc: "Sago potato patties", tag: "Festive", weight: "350g" },
+            { id: 31, name: "Mumbai Aloo Vada", category: "indian-ethnic", price: 189, image: "Mumbai Aloo Vada.png", desc: "Mumbai-style potato vada", tag: "Street Food", weight: "400g" },
+            { id: 32, name: "Hara Bhara Kebab", category: "indian-ethnic", price: 219, image: "Hara-Bhara-Kebab.png", desc: "Spinach potato kebabs", tag: "Green", weight: "350g" },
+            
+            // Baked Snacks (11 products)
+            { id: 33, name: "Margherita Pizza", category: "baked-snacks", price: 249, image: "Margherita Pizza.png", desc: "Classic pizza pockets", tag: "Pizza", weight: "400g" },
+            { id: 34, name: "Veg Paradise Pizza", category: "baked-snacks", price: 269, image: "Veg Paradise Pizza.png", desc: "Mixed veg pizza pockets", tag: "Pizza", weight: "400g" },
+            { id: 35, name: "Tandoori Paneer Pizza", category: "baked-snacks", price: 299, image: "Tandoori Paneer Pizza.png", desc: "Tandoori paneer pizza", tag: "Pizza", weight: "400g" },
+            { id: 36, name: "Garden Fresh Pizza", category: "baked-snacks", price: 259, image: "Garden Fresh Pizza.png", desc: "Fresh vegetable garden pizza", tag: "Pizza", weight: "400g" },
+            { id: 37, name: "Cheese Onion Capsicum Pizza", category: "baked-snacks", price: 279, image: "Cheese-Onion-Capsicum-Pizza.png", desc: "Cheesy onion capsicum pizza", tag: "Pizza", weight: "400g" },
+            { id: 38, name: "Mexicano Puffets", category: "baked-snacks", price: 189, image: "Mexicano Puffets.png", desc: "Mexican seasoned puffs", tag: "Mexican", weight: "350g" },
+            { id: 39, name: "Italiano Puffets", category: "baked-snacks", price: 189, image: "Italiano Puffets.png", desc: "Italian herb puffs", tag: "Italian", weight: "350g" },
+            { id: 40, name: "Schezwan Puffets", category: "baked-snacks", price: 199, image: "Schezwan Puffets.png", desc: "Spicy Schezwan puffs", tag: "Spicy", weight: "350g" },
+            { id: 41, name: "Apple Crumble Pie Puffets", category: "baked-snacks", price: 199, image: "Apple Crumble Pie Puffets.png", desc: "Apple crumble puff pastry", tag: "Dessert", weight: "300g" },
+            { id: 42, name: "Apple Pie", category: "baked-snacks", price: 179, image: "Apple Pie.png", desc: "Sweet apple pastry", tag: "Dessert", weight: "300g" },
+            { id: 43, name: "Mango Peach Pie", category: "baked-snacks", price: 189, image: "Mango – Peach Pie.png", desc: "Tropical fruit pie", tag: "Dessert", weight: "300g" },
+            { id: 44, name: "Pineapple Pie", category: "baked-snacks", price: 179, image: "Pineapple Pie.png", desc: "Sweet pineapple pastry", tag: "Dessert", weight: "300g" }
+        ];
         
         // ========== HELPER FUNCTIONS ==========
         function showNotification(message, type = 'info') {
@@ -296,10 +639,64 @@ $productsJson = json_encode($products);
             if (targetSection) targetSection.classList.add('active');
             
             if (sectionName === 'payment') updatePaymentSummary();
-            if (sectionName === 'products') renderProducts(products);
+            if (sectionName === 'products') filterAndRenderProducts();
             
-            // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        
+        // ========== FILTERING FUNCTIONS ==========
+        function filterAndRenderProducts() {
+            let filtered = [...products];
+            
+            // Apply category filter
+            if (currentCategory !== 'all') {
+                filtered = filtered.filter(p => p.category === currentCategory);
+            }
+            
+            // Apply search filter
+            if (currentSearchTerm.trim()) {
+                const term = currentSearchTerm.toLowerCase();
+                filtered = filtered.filter(p => 
+                    p.name.toLowerCase().includes(term) || 
+                    p.desc.toLowerCase().includes(term) ||
+                    p.tag.toLowerCase().includes(term)
+                );
+            }
+            
+            // Apply special filters (popular, veg, new)
+            if (currentFilter === 'popular') {
+                filtered = filtered.filter(p => p.popular === true);
+            } else if (currentFilter === 'veg') {
+                filtered = filtered.filter(p => p.category === 'veggie-specialties' || p.category === 'indian-ethnic');
+            } else if (currentFilter === 'new') {
+                filtered = filtered.filter(p => p.tag === 'New');
+            }
+            
+            renderProducts(filtered);
+        }
+        
+        function setCategory(category) {
+            currentCategory = category;
+            filterAndRenderProducts();
+            
+            // Update active category chip
+            document.querySelectorAll('.category-chip').forEach(chip => {
+                if (chip.getAttribute('data-category') === category) {
+                    chip.classList.add('active');
+                } else {
+                    chip.classList.remove('active');
+                }
+            });
+        }
+        
+        function setFilter(filter) {
+            currentFilter = filter;
+            filterAndRenderProducts();
+        }
+        
+        function searchProducts(term) {
+            currentSearchTerm = term;
+            filterAndRenderProducts();
         }
         
         // ========== CART FUNCTIONS ==========
@@ -314,6 +711,7 @@ $productsJson = json_encode($products);
             if (checkoutBtn) checkoutBtn.disabled = cart.length === 0;
             
             localStorage.setItem('hyfun_cart', JSON.stringify(cart));
+            updatePaymentSummary();
         }
         
         function addToCart(productId, quantity) {
@@ -366,28 +764,29 @@ $productsJson = json_encode($products);
                 total += itemTotal;
                 
                 itemsHTML += `
-                    <div class="cart-item-modern" data-index="${index}">
-                        <div class="cart-item-image"><img src="./assets/image/${item.image}" alt="${item.name}" style="width:60px;height:60px;object-fit:cover;border-radius:8px;"></div>
-                        <div class="cart-item-info">
-                            <h4 class="cart-item-title">${item.name}</h4>
-                            <div class="cart-item-price">₹${item.price} × ${item.quantity}</div>
-                            <div class="cart-item-controls">
-                                <button class="cart-qty-btn minus" data-index="${index}">-</button>
-                                <span class="cart-qty-value">${item.quantity}</span>
-                                <button class="cart-qty-btn plus" data-index="${index}">+</button>
-                                <button class="cart-item-remove" data-index="${index}"><i class="fas fa-trash"></i></button>
+                    <div class="cart-item-modern" data-index="${index}" style="display:flex; gap:12px; margin-bottom:15px; padding-bottom:15px; border-bottom:1px solid #eee;">
+                        <div class="cart-item-image" style="width:60px; height:60px; flex-shrink:0;">
+                            <img src="./assets/image/${item.image}" alt="${item.name}" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+                        </div>
+                        <div class="cart-item-info" style="flex:1;">
+                            <h4 style="font-size:0.9rem; font-weight:600; margin-bottom:4px;">${item.name}</h4>
+                            <div style="font-size:0.8rem; color:#78B04B;">₹${item.price} × ${item.quantity}</div>
+                            <div style="display:flex; gap:8px; margin-top:8px;">
+                                <button class="cart-qty-btn minus" data-index="${index}" style="width:26px; height:26px; border:none; background:#f0f0f0; border-radius:50%; cursor:pointer;">-</button>
+                                <span style="min-width:26px; text-align:center;">${item.quantity}</span>
+                                <button class="cart-qty-btn plus" data-index="${index}" style="width:26px; height:26px; border:none; background:#f0f0f0; border-radius:50%; cursor:pointer;">+</button>
+                                <button class="cart-item-remove" data-index="${index}" style="margin-left:auto; background:none; border:none; color:#ff4757; cursor:pointer;"><i class="fas fa-trash"></i></button>
                             </div>
                         </div>
-                        <div class="item-total" style="font-weight:bold;">₹${itemTotal}</div>
+                        <div style="font-weight:bold;">₹${itemTotal}</div>
                     </div>
-                    <hr style="margin:10px 0;">
                 `;
             });
             
             cartList.innerHTML = itemsHTML;
             if (sidebarTotal) sidebarTotal.textContent = `₹${total}`;
             
-            // Add event listeners to cart buttons
+            // Add event listeners
             document.querySelectorAll('.cart-qty-btn').forEach(btn => {
                 btn.addEventListener('click', function(e) {
                     e.stopPropagation();
@@ -400,7 +799,6 @@ $productsJson = json_encode($products);
                     }
                     renderCartItems();
                     updateCartCount();
-                    updatePaymentSummary();
                 });
             });
             
@@ -411,7 +809,6 @@ $productsJson = json_encode($products);
                     cart.splice(index, 1);
                     renderCartItems();
                     updateCartCount();
-                    updatePaymentSummary();
                 });
             });
         }
@@ -423,29 +820,38 @@ $productsJson = json_encode($products);
             
             grid.innerHTML = '';
             
+            if (productsToRender.length === 0) {
+                grid.innerHTML = '<div style="text-align:center; padding:50px; grid-column:1/-1;">No products found. Try a different search or category.</div>';
+                return;
+            }
+            
             productsToRender.forEach(product => {
                 const card = document.createElement('div');
                 card.className = 'product-card-modern';
                 card.setAttribute('data-id', product.id);
                 card.innerHTML = `
-                    <div class="product-image-wrapper" style="position:relative;height:200px;overflow:hidden;">
-                        <img src="./assets/image/${product.image}" alt="${product.name}" style="width:100%;height:100%;object-fit:cover;">
-                        ${product.tag === 'Best Seller' ? '<div class="product-badge-modern" style="position:absolute;top:10px;left:10px;background:#78B04B;color:white;padding:4px12px;border-radius:20px;font-size:12px;">Best Seller</div>' : ''}
+                    <div class="product-image-wrapper">
+                        <img src="./assets/image/${product.image}" alt="${product.name}" onerror="this.src='./assets/image/french_fries.png'">
+                        ${product.tag === 'Best Seller' ? '<div class="product-badge-modern">⭐ Best Seller</div>' : ''}
+                        ${product.tag === 'New' ? '<div class="product-badge-modern" style="background:linear-gradient(135deg,#FFA726,#FF8E53);">🔥 New</div>' : ''}
+                        ${product.popular ? '<div class="product-badge-modern" style="background:linear-gradient(135deg,#FFA726,#FF8E53);">🔥 Popular</div>' : ''}
                     </div>
-                    <div class="product-info-modern" style="padding:15px;">
-                        <h3 class="product-name" style="font-size:1.1rem;margin-bottom:5px;">${product.name}</h3>
-                        <p class="product-desc-modern" style="color:#666;font-size:0.85rem;margin-bottom:10px;">${product.description || 'Delicious potato snack'}</p>
-                        <div class="product-meta-modern" style="display:flex;justify-content:space-between;margin-bottom:15px;">
-                            <span class="product-price-modern" style="color:#78B04B;font-size:1.3rem;font-weight:bold;">₹${product.price}</span>
-                            <span class="product-weight" style="color:#999;">${product.weight || '500g'}</span>
+                    <div class="product-info-modern">
+                        <h3 class="product-name">${product.name}</h3>
+                        <p class="product-desc-modern">${product.desc}</p>
+                        <div class="product-meta-modern">
+                            <span class="product-price-modern">₹${product.price}</span>
+                            <span class="product-weight">${product.weight}</span>
                         </div>
-                        <div class="product-actions-modern" style="display:flex;gap:10px;">
-                            <div class="quantity-control-modern" style="display:flex;align-items:center;gap:8px;background:#f5f5f5;border-radius:25px;padding:5px;">
-                                <button class="qty-btn minus" data-id="${product.id}" style="width:30px;height:30px;border:none;border-radius:50%;cursor:pointer;">-</button>
-                                <span class="qty-value" id="qty-${product.id}" style="min-width:30px;text-align:center;">1</span>
-                                <button class="qty-btn plus" data-id="${product.id}" style="width:30px;height:30px;border:none;border-radius:50%;cursor:pointer;">+</button>
+                        <div class="product-actions-modern">
+                            <div class="quantity-control-modern">
+                                <button class="qty-btn minus" data-id="${product.id}">-</button>
+                                <span class="qty-value" id="qty-${product.id}">1</span>
+                                <button class="qty-btn plus" data-id="${product.id}">+</button>
                             </div>
-                            <button class="add-to-cart-btn" data-id="${product.id}" style="flex:1;background:#78B04B;color:white;border:none;border-radius:25px;padding:8px;cursor:pointer;"><i class="fas fa-cart-plus"></i> Add</button>
+                            <button class="add-to-cart-btn" data-id="${product.id}">
+                                <i class="fas fa-cart-plus"></i> Add
+                            </button>
                         </div>
                     </div>
                 `;
@@ -505,10 +911,10 @@ $productsJson = json_encode($products);
                 const itemTotal = item.price * item.quantity;
                 subtotal += itemTotal;
                 itemsHTML += `
-                    <div class="summary-item-modern" style="display:flex;gap:15px;margin-bottom:15px;padding-bottom:10px;border-bottom:1px solid #eee;">
-                        <div class="item-image" style="width:50px;height:50px;"><img src="./assets/image/${item.image}" alt="${item.name}" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"></div>
-                        <div class="item-details" style="flex:1;"><h4 style="font-size:0.9rem;">${item.name}</h4><p style="font-size:0.8rem;color:#666;">${item.weight} × ${item.quantity}</p></div>
-                        <div class="item-total" style="font-weight:bold;">₹${itemTotal}</div>
+                    <div style="display:flex; gap:12px; margin-bottom:15px; padding-bottom:10px; border-bottom:1px solid #eee;">
+                        <div style="width:50px; height:50px;"><img src="./assets/image/${item.image}" alt="${item.name}" style="width:100%; height:100%; object-fit:cover; border-radius:8px;"></div>
+                        <div style="flex:1;"><h4 style="font-size:0.9rem; margin-bottom:3px;">${item.name}</h4><p style="font-size:0.75rem; color:#666;">${item.weight} × ${item.quantity}</p></div>
+                        <div style="font-weight:bold;">₹${itemTotal}</div>
                     </div>
                 `;
             });
@@ -591,7 +997,6 @@ $productsJson = json_encode($products);
                     const orderIdSpan = document.getElementById('orderId');
                     if (orderIdSpan) orderIdSpan.textContent = result.orderNumber;
                     
-                    // Clear cart
                     cart = [];
                     localStorage.setItem('hyfun_cart', JSON.stringify(cart));
                     updateCartCount();
@@ -688,15 +1093,13 @@ $productsJson = json_encode($products);
         // ========== INITIALIZATION ==========
         function init() {
             console.log('Initializing order system...');
+            console.log('Products loaded:', products.length);
             
-            // Render products
-            if (products.length > 0) {
-                renderProducts(products);
-            }
+            renderProducts(products);
             renderCartItems();
             updateCartCount();
             
-            // Event Listeners
+            // Event Listeners for filtering
             document.getElementById('startOrderBtn')?.addEventListener('click', () => loadSection('auth'));
             document.getElementById('cartToggleBtn')?.addEventListener('click', toggleCart);
             document.getElementById('closeCartBtn')?.addEventListener('click', toggleCart);
@@ -708,6 +1111,50 @@ $productsJson = json_encode($products);
             document.getElementById('processPaymentBtn')?.addEventListener('click', processPayment);
             document.getElementById('rateExperienceBtn')?.addEventListener('click', () => loadSection('review'));
             document.getElementById('homeBtn')?.addEventListener('click', () => window.location.href = 'index.php');
+            
+            // Category chips
+            document.querySelectorAll('.category-chip').forEach(chip => {
+                chip.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    setCategory(category);
+                });
+            });
+            
+            // Search input
+            const searchInput = document.getElementById('searchProducts');
+            if (searchInput) {
+                searchInput.addEventListener('input', function(e) {
+                    searchProducts(e.target.value);
+                });
+            }
+            
+            // Filter button
+            document.getElementById('filterBtn')?.addEventListener('click', function() {
+                document.getElementById('filterMenu')?.classList.toggle('active');
+            });
+            
+            // Filter options
+            document.querySelectorAll('.filter-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    setFilter(filter);
+                    document.getElementById('filterMenu')?.classList.remove('active');
+                    
+                    // Update filter button text
+                    const filterBtn = document.getElementById('filterBtn');
+                    if (filterBtn) {
+                        const filterText = this.textContent.trim();
+                        filterBtn.innerHTML = `<i class="fas fa-filter"></i> ${filterText}`;
+                    }
+                });
+            });
+            
+            // Close filter menu on outside click
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.filter-dropdown')) {
+                    document.getElementById('filterMenu')?.classList.remove('active');
+                }
+            });
             
             // Delivery form
             document.getElementById('deliveryForm')?.addEventListener('submit', (e) => {
@@ -777,7 +1224,7 @@ $productsJson = json_encode($products);
                 });
             });
             
-            console.log('Order system initialized. Cart items:', cart.length);
+            console.log('Order system initialized. Total products:', products.length);
         }
         
         // Start when DOM is ready

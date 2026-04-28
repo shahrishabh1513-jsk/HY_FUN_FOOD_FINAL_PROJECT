@@ -209,3 +209,293 @@ Save order result: Array
     [orderNumber] => HYFUN-69DF11253851C-4615
 )
 
+2026-04-28 02:47:47 - Order API received: Array
+(
+    [action] => save_order
+    [orderData] => Array
+        (
+            [fullName] => Jenish Khunt 
+            [phoneNumber] => 7861976128
+            [email] => 23ss02it095@ppsu.ac.in
+            [address] => Hirabag 
+            [landmark] => 
+            [city] => Surat 
+            [pincode] => 395006
+            [deliveryTime] => 2hr
+            [paymentMethod] => card
+        )
+
+    [cartItems] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Classic French Fries
+                    [price] => 199
+                    [image] => french_fries.png
+                    [quantity] => 1
+                    [weight] => 500g
+                )
+
+            [1] => Array
+                (
+                    [id] => 12
+                    [name] => Hash Brown Triangle
+                    [price] => 199
+                    [image] => Hash Brown Triangle.png
+                    [quantity] => 1
+                    [weight] => 300g
+                )
+
+            [2] => Array
+                (
+                    [id] => 18
+                    [name] => Classic Patty with Herbs
+                    [price] => 229
+                    [image] => Classic Patty with Herbs & Chilli.png
+                    [quantity] => 1
+                    [weight] => 250g
+                )
+
+            [3] => Array
+                (
+                    [id] => 31
+                    [name] => Mumbai Aloo Vada
+                    [price] => 189
+                    [image] => Mumbai Aloo Vada.png
+                    [quantity] => 1
+                    [weight] => 400g
+                )
+
+            [4] => Array
+                (
+                    [id] => 35
+                    [name] => Tandoori Paneer Pizza
+                    [price] => 299
+                    [image] => Tandoori Paneer Pizza.png
+                    [quantity] => 1
+                    [weight] => 400g
+                )
+
+        )
+
+)
+
+Save order result: Array
+(
+    [success] => 1
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+    [orderId] => 4
+)
+
+2026-04-28 02:48:53 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:48:55 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:48:55 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:48:56 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:48:56 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-28 02:48:57 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-28 02:49:00 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:00 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:00 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:00 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:00 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:01 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:01 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:02 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-28 02:49:02 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-28 02:49:02 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-28 02:49:05 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69D67FDAC591D-1131
+)
+
+2026-04-28 02:49:05 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69D67FDAC591D-1131
+)
+
+2026-04-28 02:49:14 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:15 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 02:49:15 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 03:06:33 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 03:06:38 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69DF11253851C-4615
+)
+
+2026-04-28 03:16:14 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 03:16:20 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F003B3B6028-5416
+)
+
+2026-04-28 06:10:03 - Order API received: Array
+(
+    [action] => save_order
+    [orderData] => Array
+        (
+            [fullName] => Tirsth
+            [phoneNumber] => 7861976128
+            [email] => 23ss02it181@ppsu.ac.in
+            [address] => Uma Shivam
+            [landmark] => 
+            [city] => Mehsana
+            [pincode] => 384002
+            [deliveryTime] => asap
+            [paymentMethod] => cod
+        )
+
+    [cartItems] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [name] => Crinkle Cut Fries
+                    [price] => 179
+                    [image] => Crinkle fries.png
+                    [quantity] => 1
+                    [weight] => 500g
+                )
+
+            [1] => Array
+                (
+                    [id] => 4
+                    [name] => Skin On Fries
+                    [price] => 189
+                    [image] => Skin on Fries.png
+                    [quantity] => 1
+                    [weight] => 500g
+                )
+
+        )
+
+)
+
+Save order result: Array
+(
+    [success] => 1
+    [orderNumber] => HYFUN-69F0331BAB7CF-3335
+    [orderId] => 5
+)
+
+2026-04-28 06:11:00 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F0331BAB7CF-3335
+)
+
+2026-04-28 07:40:19 - Order API received: Array
+(
+    [action] => get_order
+    [orderNumber] => HYFUN-69F0331BAB7CF-3335
+)
+
