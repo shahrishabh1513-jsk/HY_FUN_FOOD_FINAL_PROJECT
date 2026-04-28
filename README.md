@@ -107,8 +107,6 @@ This project focuses on:
 <img width="1786" height="808" alt="Hyfun_ss2" src="https://github.com/user-attachments/assets/df6f76d9-aa9f-41d5-bd3a-e4bbf307dbbc" />
 <img width="1894" height="742" alt="Hyfun_ss3" src="https://github.com/user-attachments/assets/f3048fbd-6327-417b-b5a7-9b7767781e15" />
 
-<img src="https://via.placeholder.com/1200x600.png?text=HY+FUN+FOOD+Preview" width="100%" />
-
 ---
 
 ## 🚀 Future Enhancements
